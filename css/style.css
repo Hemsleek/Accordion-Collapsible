@@ -35,6 +35,10 @@ section {
     height: auto;
 }
 
+main p {
+    margin-bottom: 7rem;
+}
+
 section:hover {
     cursor: pointer;
 }
@@ -60,10 +64,8 @@ section header:first-of-type {
     border-top: 1px solid #7e7575;
 }
 
-header .img-wrapper {
-    padding: .2rem;
-    border-radius: 5;
-    background: #f5f5f5;
+.active header img {
+    content: url(../media/subtract.svg);
 }
 
 section .content {
