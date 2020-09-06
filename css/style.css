@@ -69,6 +69,7 @@ header .img-wrapper {
 section .content {
     display: none;
     background: white;
+    height: 0;
 }
 
 .content ol {
@@ -87,6 +88,7 @@ ol li a {
 
 .active .content {
     display: block;
+    height: auto;
 }
 
 .active header {

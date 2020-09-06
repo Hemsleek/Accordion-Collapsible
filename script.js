@@ -2,16 +2,25 @@ $(document).ready(function() {
 
     $("header").click(function() {
 
-        if ($("section").hasClass("active")) {
+        if ($(this).parent().hasClass("active")) {
 
-            $("section").toggleClass("active");
+            $("section").removeClass("active");
+
+            $(this).parent().toggleClass("active");
+
+        } else {
+            $("section").removeClass("active");
+
         }
-
         $(this).parent().toggleClass("active");
+
+
 
         const headerText = $(this).children(".title").text();
 
-        $(".container").html(`<h1>${headerText}</h1><p>loremsfjskfbjfhfhfg</p>`);
+        $(".container").html(`<h1>${headerText}</h1><p>loremsfjskfbjfhfhfg</p>
+        <p id="1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere veniam ab labore tempora, cumque adipisci nam error fugit sequi iusto, delectus assumenda animi quis a voluptas aut laudantium repellendus ratione?</p>
+        <p id="2">this a second lorem <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere veniam ab labore tempora, cumque adipisci nam error fugit sequi iusto, delectus assumenda animi quis a voluptas aut laudantium repellendus ratione?</p>`);
 
     });
 });
